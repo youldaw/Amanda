@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanda - Free Bootstrap Website Template for Blog Template</title>
+
+    <!--vendor css ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="../npm/swiper%409/swiper-bundle.min.css">
+
+    <!--Bootstrap ================================================== -->
+    <link href="../npm/bootstrap%405.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+    <!-- Style Sheet ================================================== -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Google Fonts ================================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="../css2?family=Jaldi&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <!-- script ================================================== -->
+    <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-icon" viewbox="0 0 512 512">
+            <path fill="currentColor" d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256L359.873 121.377z"></path>
+        </symbol>
+        <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 32 32">
+            <title>Search</title>
+            <path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z"></path>
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="close" viewbox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"></path>
+        </symbol>
+    </svg>
+
+
+    <div class="search-popup">
+        <div class="search-popup-container">
+
+            <form role="search" method="get" class="search-form" action="">
+                <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s">
+                <button type="submit" class="search-submit"><svg class="search">
+                        <use xlink:href="#search"></use>
+                    </svg></button>
+            </form>
+
+            <h5 class="cat-list-title">Browse Categories</h5>
+
+            <ul class="cat-list">
+                <li class="cat-list-item">
+                    <a href="#" title="Self Love">Self Love</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Relationships">Relationships</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Skin Care">Skin Care</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Health">Health</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Spa">Spa</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Friendship">Friendship</a>
+                </li>
+                <li class="cat-list-item">
+                    <a href="#" title="Healing">Healing</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <!-- Navigation Section Starts -->
+    <nav id="header-nav" class="navbar navbar-expand-lg container-fluid py-4 px-5 position-fixed">
+        <a class="navbar-brand" href="index.html"><img src="images/Amanda.png" alt="logo"></a>
+        <p class="title-paragraph mb-0">a freelance blog writer</p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link pe-lg-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-lg-5" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-lg-5" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pe-lg-5" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pe-lg-5 dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> Pages <iconify-icon icon="ic:outline-arrow-drop-down"></iconify-icon>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="text-center"><a href="about.html" class="dropdown-item ">About <span class="badge bg-secondary">Pro</span></a></li>
+                            <li class="text-center"><a href="blog.html" class="dropdown-item ">Blog <span class="badge bg-secondary">Pro</span></a></li>
+                            <li class="text-center"><a href="blog-single.html" class="dropdown-item ">Blog-Single <span class="badge bg-secondary">Pro</span></a>
+                            </li>
+                            <li class="text-center"><a href="contact.html" class="dropdown-item ">Contact <span class="badge bg-secondary">Pro</span></a></li>
+                            <li class="text-center"><a href="single.html" class="dropdown-item ">Single <span class="badge bg-secondary">Pro</span></a></li>
+                            <li class="text-center"><a href="styles.html" class="dropdown-item ">Styles <span class="badge bg-secondary">Pro</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item search-item ">
+                        <a href="#" class="search-button">
+                            <svg class="search">
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- title Section Starts -->
+    <section id="title">
+        <div class="container banner-content">
+            <div class="  offset-md-1 col-md-10 padding-xlarge text-center ">
+                <span class="blog-date text-uppercase"><a href="index.html" class="">Home</a></span> &nbsp; / &nbsp;
+                <span class="item">About</span>
+                <h2 class="display-2 mt-3">About Us</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog-card Section Starts -->
+    <section id="about-content">
+        <div class="container">
+            <div class="row ">
+                <div class="offset-md-1 col-md-10 pb-5">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus leo vel orci malesuada, id
+                        sodales em volutpat. Vivamus sagittis pulvinar dignissim. Mauris tempus a lacus eu aliquet.
+                        Mauris gravida at ectus quis venenatis. Aenean quis feugiat turpis. Etiam lacinia interdum nibh,
+                        non convallis magna lementum vel. Phasellus varius quam ligula, in lobortis risus porttitor ut.
+                        Praesent ipsum elit, lobortis n tincidunt a, dapibus et lorem. Praesent eget dui a est fringilla
+                        rutrum sit amet in eros. Vestibulum ut ros sed enim feugiat lobortis. Suspendisse fermentum nunc
+                        in est mattis molestie. Mauris ut placerat isus. Aenean mollis neque libero, ut pellentesque
+                        arcu dapibus vel.</p>
+                    <p>Praesent nec nisl euismod, lacinia tellus eget, bibendum ex. Maecenas imperdiet gravida pulvinar.
+                        aecenas feugiat id tellus sed sodales. Praesent maximus ultricies elit eget accumsan. Proin
+                        tortor ante, ltrices a aliquet a, facilisis quis sapien. Donec eu turpis at velit scelerisque
+                        faucibus id eget dolor. tiam lobortis ante ipsum, sed venenatis ligula facilisis quis. Fusce
+                        blandit commodo mauris, sed fringilla isi congue et. Nunc eu eros ex.</p>
+
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col"><img src="images/blog11.png" class="img-fluid" alt="About us"></div>
+                <div class="col"><img src="images/blog10.png" class="img-fluid" alt="About us"></div>
+                <div class="col"><img src="images/blog9.png" class="img-fluid" alt="About us"></div>
+            </div>
+            <div class="row">
+                <div class="offset-md-1 col-md-10 mt-5">
+                    <h3 class="">Motto</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde omnis iste.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
+                        unde omnis iste.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Starts -->
+    <section id="footer" class="position-relative">
+
+        <div class="pattern-overlay pattern-left position-absolute">
+            <img src="images/leaf-img-pattern-left.png" alt="pattern">
+        </div>
+        <div class="pattern-overlay pattern-right position-absolute">
+            <img src="images/leaf-img-pattern-right.png" alt="pattern">
+        </div>
+
+        <div class="container footer-container py-5 ">
+            <footer class="row my-5 py-5 ">
+
+                <div class="col-6 col-md-2 ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="footer-link ">Twitter</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link ">Facebook</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link ">Instagram</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link ">Linkedin </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Contact</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Terms</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Spirituality</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Life</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Relationships</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Travel</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Health</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 ">
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Spirituality</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Life</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Relationships</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Travel</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="footer-link">Health</a></li>
+                    </ul>
+                </div>
+
+
+
+                <div class=" col-md-4 mt-5 mt-md-0 text-md-end">
+                    <p class="m-0"> <b>hello@templatesjungle.com</b> </p>
+                    <p class="m-0">15Th Street Avenue, New York, USA</p>
+                    <p class="m-0">011-554-8798-6556</p>
+
+                    <div class=" mt-3 d-flex justify-content-md-end">
+                        <a href="#" class="social-link active ps-3" target="_blank"><iconify-icon class="social-icon" icon="mdi:facebook"></iconify-icon></a>
+                        <a href="#" class="social-link ps-3" target="_blank"><iconify-icon class="social-icon" icon="mdi:instagram"></iconify-icon></a>
+                        <a href="#" class="social-link ps-3" target="_blank"><iconify-icon class="social-icon" icon="mdi:twitter"></iconify-icon></a>
+                        <a href="#" class="social-link ps-3" target="_blank"><iconify-icon class="social-icon" icon="mdi:linkedin"></iconify-icon></a>
+                        <a href="#" class="social-link ps-3" target="_blank"><iconify-icon class="social-icon" icon="mdi:youtube"></iconify-icon></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+            <footer class="d-flex flex-wrap justify-content-between align-items-center border-top"></footer>
+
+            <footer class="  py-2 pt-4">
+                <div class="d-flex flex-column align-items-center mt-3">
+                    <p class="mb-0 ">© 2023 TemplatesJungle. All rights reserved.</p>
+                    <p class="">Designed By:<a href="https://templatesjungle.com/" class="website-link" target="_blank">
+                            <b><u>TemplatesJungle</u></b></a></p>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+    <!-- script ================================================== -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- Bootstarp script ================================================== -->
+    <script src="../npm/bootstrap%405.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- Swiper script ================================================== -->
+    <script src="../npm/swiper%409/swiper-bundle.min.js"></script>
+
+    <!--iconify script ================================================== -->
+    <script src="../npm/iconify-icon%401.0.7/dist/iconify-icon.min.js"></script>
+
+</body>
+
+</html>
